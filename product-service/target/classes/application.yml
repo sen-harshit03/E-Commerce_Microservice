@@ -1,0 +1,20 @@
+
+logging:
+  level:
+    root: INFO
+    spring: INFO
+    product-controller: INFO
+    product: DEBUG
+
+
+
+
+
+
+
+
+group:
+    spring: "org.springframework, org.springdoc"
+    product-service: "com.productservice.service"
+    product-controller: "com.productservice.controller"
+    product: "com.productservice"

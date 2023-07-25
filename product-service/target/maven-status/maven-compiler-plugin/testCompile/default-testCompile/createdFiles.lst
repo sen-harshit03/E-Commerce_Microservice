@@ -1,0 +1,4 @@
+com\productservice\constants\TestConstants.class
+com\productservice\ProductServiceApplicationTests.class
+com\productservice\ProductControllerTests.class
+com\productservice\serializer\Serializer.class
