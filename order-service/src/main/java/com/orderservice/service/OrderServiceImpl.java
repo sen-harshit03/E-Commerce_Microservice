@@ -26,7 +26,7 @@ public class OrderServiceImpl implements OrderService{
     private OrderRepository orderRepository;
 
     @Autowired
-    private WebClient webClient;
+    private WebClient.Builder webClientBuilder;
 
     @Override
     public void placeOrder(OrderRequest orderRequest) {
@@ -40,8 +40,8 @@ public class OrderServiceImpl implements OrderService{
 
         List<String> skuCodeRequests = batchSkuCodes(order);
 
-        InventoryResponseDto[] response = webClient.get()
-                .uri("http://localhost:8084/api/inventory",
+        InventoryResponseDto[] response = webClientBuilder.build().get()
+                .uri("http://inventory-service/api/inventory",
                         uriBuilder -> uriBuilder.queryParam("skuCodes", skuCodeRequests).build())
                         .retrieve()
                                 .bodyToMono(InventoryResponseDto[].class)
