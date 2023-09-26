@@ -1,4 +1,4 @@
-package com.orderservice.config;
+package com.orderservice.controller.config;
 
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

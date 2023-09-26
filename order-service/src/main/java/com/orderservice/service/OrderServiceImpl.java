@@ -7,7 +7,10 @@ import com.orderservice.dto.OrderResponseDto;
 import com.orderservice.model.Order;
 import com.orderservice.model.OrderLineItem;
 import com.orderservice.repository.OrderRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -20,6 +23,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Transactional
+@Slf4j
 public class OrderServiceImpl implements OrderService{
 
     @Autowired

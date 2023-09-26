@@ -10,9 +10,6 @@ logging:
 
 
 
-
-
-
 group:
     spring: "org.springframework, org.springdoc"
     product-service: "com.productservice.service"

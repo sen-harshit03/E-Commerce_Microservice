@@ -16,6 +16,8 @@ public interface ProductRepository extends MongoRepository <Product, String> {
     public List<Product> findByCategoryIgnoreCase(String category);
 
     public void deleteByName(String name);
+
+
 //    public void save(Product product);
 //
 //    public List<Product> findAll();

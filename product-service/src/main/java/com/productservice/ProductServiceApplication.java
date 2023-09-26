@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-//@EnableMongoRepositories
+@EnableMongoRepositories
 public class ProductServiceApplication {
 
 	public static void main(String[] args) {

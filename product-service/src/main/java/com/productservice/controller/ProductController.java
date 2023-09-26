@@ -3,7 +3,6 @@ package com.productservice.controller;
 import com.productservice.dto.ProductRequestDto;
 import com.productservice.dto.ProductResponseDto;
 import com.productservice.service.ProductService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
